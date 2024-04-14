@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <title> Painting Canvas</title>
+</head>
+
+<body onload="main()">
+   <!-- Create a canvas (400x400) Note: size and origin -->
+   <canvas id="webgl" width="400" height="400" style="border:1px solid #000000;"></canvas>
+   <br><br>
+   <button type="button" id ="clearCanvas">Clear Canvas</button>
+   <!-- Canvas Background Color Picker -->
+<!--<label for="canvasColor">Canvas Color:</label>-->
+<!--<input type="color" id="canvasColor" name="canvasColor">-->
+
+
+   
+   
+   <br><br>
+   <!-- Drawing Mode -->
+   <label for="v1">Drawing Mode:</label>
+   <button type="button" id ="square">Squares</button>
+   <button type="button" id ="triangle">Triangles</button>
+   <button type="button" id ="circle">Circles</button>
+   <button type="button" id ="eraser">Eraser</button>
+   <!-- <button onclick="toggleDefaultMode()">Default Drawing</button> -->
+   <button id="defaultDrawingButton">Default Drawing</button>
+
+
+
+   <br><br>
+
+   <button id="saveColorBtn">Save Color</button>
+<button id="clearSavedColorsBtn">Clear Saved Colors</button>
+<br><br>
+
+      <!-- Color Display -->
+      <div id="colorSection" style="display: flex; align-items: center;">
+         <!-- Color Display -->
+         <div id="colorDisplay" style="width: 50px; height: 50px; border: 1px solid #000; margin-right: 10px;"></div>
+         
+         <!-- Saved Colors Display -->
+         <div id="savedColors" style="display: flex;"></div>
+     </div>
+     <br>
+   <!-- Shape Color -->
+   <label for="red">Red</label>
+   <input type="range" id="red" name="red" min="0" max="10" >
+   <label for="green">Green</label>
+   <input type="range" id="green" name="green" min="0" max="10">
+   <label for="blue">Blue</label>
+   <input type="range" id="blue" name="blue" min="0" max="10">
+   <br><br>
+   <!-- Shape & Size -->
+   <label for="size">Shape Size: </label>
+   <input type="range" id="size" name="size" min="1" max="10">
+   <label for="sCount">(Circle) Segment Count: </label>
+   <input type="range" id="sCount" name="sCount" min="1.5" max="12">
+   <br><br>
+
+   <img src="webgllotus.png" alt="Lotus" width="200" height="200" style="display: block; margin: 0 auto;">
+   <br><br>
+
+
+
+
+   <!-- javascript files containing functions for WebGL -->
+   <script src="lib/webgl-utils.js"></script>
+   <script src="lib/webgl-debug.js"></script>
+   <script src="lib/cuon-utils.js"></script>
+   <script src="lib/cuon-matrix-cse160.js"></script>
+
+   <!-- Add our asg js file -->
+   <script type=text/javascript src="asg1.js"></script>
+   <script type=text/javascript src="Triangle.js"></script>
+   <script type=text/javascript src="Point.js"></script>
+   <script type=text/javascript src="Circle.js"></script>
+
+</body>
+</html>
