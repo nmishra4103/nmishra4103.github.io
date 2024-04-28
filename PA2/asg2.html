@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <title> HW2</title>
+</head>
+
+<body onload="main()">
+   <!-- Create a canvas (400x400) Note: size and origin -->
+   <canvas id="webgl" width="400" height="400" style="border:1px solid #000000;">
+      Please use a browser that supports "canvas"
+   </canvas>
+
+   <br><br>
+   <!-- Camera and Joint -->
+   <!-- <label for="camera">Camera Angle:</label> -->
+   <!-- <input type="range" id="camera" name="camera" min="0" max="360" value="0" class = "slider"><br> -->
+   <!-- <label for="joint">Joint 1</label>
+   <input type="range" id="joint" name="joint" min="0" max="45" value="0" class = "slider"><br>
+   <label for="joint">Joint 2</label>
+   <input type="range" id="joint2" name="joint2" min="0" max="45" value="0" class = "slider"><br> -->
+   <div id="fps" style="font-size:16px;">FPS: </div>
+
+
+   <label for="tailJoint1">Tail Joint 1</label>
+<input type="range" id="tailJoint1" name="tailJoint1" min="-45" max="45" value="0" class="slider"><br>
+
+<label for="tailJoint2">Tail Joint 2</label>
+<input type="range" id="tailJoint2" name="tailJoint2" min="-45" max="45" value="0" class="slider"><br>
+
+<label for="tailJoint3">Tail Joint 3</label>
+<input type="range" id="tailJoint3" name="tailJoint3" min="-45" max="45" value="0" class="slider"><br>
+
+   <label for="animate_on">Animation: </label>
+   <button type="button" id="animate_on">ON</button>
+   <button type="button" id="animate_off">OFF</button><br>
+   
+
+   <!-- javascript files containing functions for WebGL -->
+   <script src="lib/webgl-utils.js"></script>
+   <script src="lib/webgl-debug.js"></script>
+   <script src="lib/cuon-utils.js"></script>
+   <script src="lib/cuon-matrix.js"></script>
+
+   <!-- Add our asg js file -->
+   <script type=text/javascript src="Triangle.js"></script>
+   <script type=text/javascript src="Point.js"></script>
+   <script type=text/javascript src="Circle.js"></script>
+   <script type=text/javascript src="Cube.js"></script>
+   <script type=text/javascript src="asg2.js"></script>
+   <script type=text/javascript src="drawAllShapes.js"></script>
+   <script type=text/javascript src="Sphere.js"></script>
+   <script type=text/javascript src="Pyramid.js"></script>
+
+
+</body>
+</html>
