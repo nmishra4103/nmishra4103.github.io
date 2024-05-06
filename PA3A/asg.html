@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title> HW3A</title>
+</head>
+<body onload="main()">
+    <!-- Create a canvas (400x400) Note: size and origin -->
+    <canvas id="webgl" width="400" height="400" style="border:1px solid #000000;">
+       Please use a browser that supports "canvas"
+    </canvas>
+
+    <p>  
+         <div class="controls-container">
+                    X:
+                    <input type="range" min="0" max="360" value="0" class="slider" id="x" oninput="renderScene()">
+                   
+                    Y:
+                    <input type="range" min="0" max="360" value="125" class="slider" id="y" oninput="renderScene()">
+                    
+                    Z:
+                    <input type="range" min="0" max="360" value="0" class="slider" id="z" oninput="renderScene()">
+                   
+                </div>    
+      <p>
+
+    <script src="asg.js"></script>
+    <script type=text/javascript src="Triangle.js"></script>
+    <script type=text/javascript src="Point.js"></script>
+    <script type=text/javascript src="Circle.js"></script>
+    <script type=text/javascript src="Cube.js"></script>
+    <script type=text/javascript src="drawAllShapes.js"></script>
+    <script type=text/javascript src="Sphere.js"></script>
+    <script type=text/javascript src="Pyramid.js"></script>
+    <!-- oops forgot these -->
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix.js"></script>
+ 
+</body>
+</html>
