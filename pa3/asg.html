@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title> HW3</title>
+</head>
+<body onload="main()">
+    <!-- Create a canvas (400x400) Note: size and origin -->
+    <canvas id="webgl" width="400" height="400" style="border:1px solid #000000;">
+       Please use a browser that supports "canvas"
+    </canvas>
+
+    <p>  
+     <div id="fps" style="font-size:16px;">FPS: </div>
+         <div class="controls-container">
+                    X:
+                    <input type="range" min="0" max="360" value="0" class="slider" id="x" oninput="renderScene()">
+                   
+                    Y:
+                    <input type="range" min="0" max="360" value="125" class="slider" id="y" oninput="renderScene()">
+                    
+                    Z:
+                    <input type="range" min="0" max="360" value="0" class="slider" id="z" oninput="renderScene()">
+                    <!--too lazy to remove the above-->
+                    
+                    <br><br>
+                    Perspective: 
+                    <input type="range" min="40" max="120" value="60" class="slider" id="Perspective">
+                    
+                     <button id="cameraButton">Minecraft Mode</button>
+                     
+                     <select id="textureSelect" onchange="textureSelect(); main();">
+                <option value="lava">Lava</option>
+                <option value="dream">Dream</option>
+                <option value="earth">Earth</option>
+                 <option value="ocean">Interstellar</option>
+            </select>
+                   
+                </div> 
+                
+                    <p>The story is that you are Decepticon Soundwave and you sent one of your cassettes, Ravage, to scout for energon. Ravage comm’d you that he found some but he’s too small to get up there.</p>
+
+      <p>
+
+    <script src="asg.js"></script>
+    <script type=text/javascript src="Triangle.js"></script>
+    <script type=text/javascript src="Point.js"></script>
+    <script type=text/javascript src="Circle.js"></script>
+    <script type=text/javascript src="Cube.js"></script>
+    <script type=text/javascript src="drawAllShapes.js"></script>
+    <script type=text/javascript src="Sphere.js"></script>
+    <script type=text/javascript src="Pyramid.js"></script>
+    <!-- oops forgot these -->
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <!--<script src="lib/cuon-matrix.js"></script>-->
+    <!--is this one just not working for some reason???-->
+    <!--IT WAS THE LIBRARY????-->
+    <script src="lib/cuon-matrix-cse160.js"></script>
+    <script src="camera.js"></script>
+ 
+</body>
+</html>
