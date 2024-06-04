@@ -9,4 +9,6 @@ for CSE160
 [PA3](https://nmishra4103.github.io/pa3/features.html)
 [PA5B](https://nmishra4103.github.io/PA5B/features.html)
 [PA4](https://nmishra4103.github.io/pa4/features.html)
+[PA5C](https://nmishra4103.github.io/pa5c/features.html)
+
 
